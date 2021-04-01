@@ -1,0 +1,57 @@
+<!--Get Label from XML File -->
+<p id="annotation">
+test text
+
+</p>
+
+
+<!-- Annotations Button Panel -->
+
+
+<table style="border:0; margin-left:auto; margin-right:auto;">
+    <tr>
+        <td><button class="number" onclick="annotateClick(1)">1</button></td>
+        <td><button class="number" onclick="annotateClick(2)">2</button></td>
+        <td><button class="number" onclick="annotateClick(3)">3</button></td>
+        <td><button class="number" onclick="annotateClick(4)">4</button></td>
+        <td><button class="number" onclick="annotateClick(5)">5</button></td>
+        <td><button class="number" onclick="annotateClick(6)">6</button></td>
+    </tr>
+    <tr>
+        <td><button class="number" onclick="annotateClick(7)">7</button></td>
+        <td><button class="number" onclick="annotateClick(8)">8</button></td>
+        <td><button class="number" onclick="annotateClick(9)">9</button></td>
+        <td><button class="number" onclick="annotateClick(10)">10</button></td>
+        <td><button class="number" onclick="annotateClick(11)">11</button></td>
+        <td><button class="number" onclick="annotateClick(12)">12</button></td>
+    </tr>
+
+
+
+
+</table>
+
+
+<script type="text/javascript">
+ var stringData = [
+    "Annotation #1", 
+    "Annotation #2", 
+    "Annotation #3"
+    ];
+
+    function annotateClick(num) { //num == button number.
+        //Access the annotation display label.
+        var disp = document.getElementById('annotation');
+
+        //Take whatever is in the display, replace it with the corresponding annotation.
+        disp.innerHTML = stringData[num-1];
+    }
+
+    //Function for user to add an annotation?
+
+
+</script>
+
+
+
+
